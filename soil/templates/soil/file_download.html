@@ -1,9 +1,10 @@
 {% extends "soil/base.html" %}
+{% load hq_shared_tags %}
 {% block title %}
     File Downloader
 {% endblock title %}
 {% block extrahead %}
-    <script type="text/javascript" src="{{ STATIC_URL }}/soil/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="{% static '/soil/jquery-1.7.1.min.js' %}"></script>
     <script type="text/javascript">
         var autoRefresh = '';
         var pollDownloader = function () {
